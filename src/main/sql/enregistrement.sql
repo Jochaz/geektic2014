@@ -1,0 +1,30 @@
+insert into interet values (0001, 'JAVA', 'java.png');
+insert into interet values (0002, 'C#', 'csharp.png');
+insert into interet values (0003, 'PHP', 'php.png');
+insert into interet values (0004, 'DELPHI', 'delphi.png');
+insert into interet values (0005, 'TDD', 'tdd.png');
+insert into interet values (0006, 'MCD', 'mcd.png');
+
+insert into geek values (0001, 'DUPONT', 'Jean', 'jean.dupont@gmail.com', 'H', 'Bonjour blablabla' , 'jeandupont.png');
+insert into geek values (0002, 'CHARIOT', 'Jordan', 'jordan.chariot@gmail.com', 'H', 'Bonjour blablabla', 'jordanchariot.png');
+insert into geek values (0003, 'BRUGERE', 'KEVIN', 'kevin.brugere@gmail.com', 'H', 'Bonjour blablabla', 'renyere.png');
+insert into geek values (0004, 'SABATY', 'Alexandra', 'alexandra.sabaty@gmail.com', 'F', 'Bonjour blablabla', 'alexandrasabaty.png');
+insert into geek values (0005, 'GALEA', 'Baptiste', 'baptiste.galea@gmail.com', 'H', 'Bonjour blablabla', 'baptistegalea.png');
+insert into geek values (0006, 'CAQUANT', 'Jennifer', 'jennifer.caquant@gmail.com', 'F', 'Bonjour blablabla', 'jennifercaquant.png');
+
+insert into avoir values (0001, 002);
+insert into avoir values (0001, 005);
+insert into avoir values (0001, 006);
+insert into avoir values (0002, 003);
+insert into avoir values (0002, 006);
+insert into avoir values (0002, 004);
+insert into avoir values (0003, 004);
+insert into avoir values (0003, 001);
+insert into avoir values (0004, 003);
+insert into avoir values (0004, 002);
+insert into avoir values (0005, 002);
+insert into avoir values (0005, 003);
+insert into avoir values (0005, 006);
+insert into avoir values (0006, 002);
+insert into avoir values (0006, 005);
+insert into avoir values (0006, 006);
