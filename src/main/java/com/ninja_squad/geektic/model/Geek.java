@@ -25,6 +25,8 @@ public class Geek {
 	private Set<Interet> lesInterets;
 	
 	//CONSTRUCTOR
+	public Geek(){}
+	 
 	public Geek(int id, String nom, String prenom, String mail, String sexe, String description, String photo) {
 		this.id = id;
 		this.nom = nom;
@@ -32,6 +34,7 @@ public class Geek {
 		this.mail = mail;
 		this.sexe = sexe;
 		this.description = description;
+		this.photo = photo;
 	}
 	
 	//GETTER AND SETTER

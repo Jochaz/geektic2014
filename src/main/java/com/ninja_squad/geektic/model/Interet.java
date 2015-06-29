@@ -11,6 +11,7 @@ public class Interet {
 	private String icone;
 	
 	//CONSTRUCTOR
+	public Interet(){}
 	public Interet(int id, String libelle) {
 		this.id = id;
 		this.libelle = libelle;
