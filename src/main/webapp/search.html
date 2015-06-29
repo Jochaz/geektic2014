@@ -1,0 +1,29 @@
+<div>
+    <FORM method="get" ng-submit="search()" ng-controller="SearchCtrl" action="/#/search">
+        <INPUT type="radio" name="sexe" id="man" value="H" checked> Homme
+        <INPUT type="radio" name="sexe" id="woman" value="F" > Femme
+
+        <br /><br />
+
+        <div class="interet">
+            <select name="listeInteret">
+            	<option ng-repeat="item in lesInterets" value={{item.id}}>{{item.libelle}}</option>
+            </select>
+        </div>
+        <br />
+        <INPUT type="submit" value="Chercher votre Geek">
+    </FORM>
+
+
+
+    <div >
+        <!--<div class="list-group">
+            <a ng-repeat="item in lesGeeks" href="#/geeks/{{item.id}}" class="list-group-item">
+                <h4 class="list-group-item-heading">{{item.nom}} {{item.prenom}}</h4>
+                <p class="list-group-item-text">{{item.mail}}</p>
+                <p class="list-group-item-text">{{item.sexe}}</p>
+            </a>
+        </div>-->
+        </table>
+    </div>
+</div>

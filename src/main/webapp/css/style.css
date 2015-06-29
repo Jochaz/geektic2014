@@ -1,0 +1,33 @@
+body{
+	background-color: #f1c40f;
+	width:100%;
+}
+
+form{
+	width: 40%;
+	padding: 2%;
+	margin: auto;
+	background-color: #ecf0f1;	
+}
+
+#listeGeekUl{
+	width:40%;
+	margin:auto;
+}
+
+#geek{
+	width:55%;
+	margin:auto;
+	background-color: #ecf0f1;
+	padding: 2%;
+}
+
+#contents{
+	width:70%;
+	margin: auto;
+	background-color:#070707;
+	text-align: center;
+	color:white;
+	padding:2%;
+}
+
