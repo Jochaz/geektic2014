@@ -42,5 +42,5 @@ public class GeekDao {
 		TypedQuery<Geek> resultAll = entityManager.createQuery(reqAll, Geek.class);
 		return resultAll.getResultList();
 	}
-
+	
 }
