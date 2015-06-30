@@ -54,5 +54,12 @@ public class GeekDaoTest extends com.ninja_squad.geektic.dao.BaseDaoTest {
         assertEquals(expected, response);
     }
     
+    @Test
+    public void testFindAll() {
+    	int count = 6;
+    	int countDao = geekDao.findAll().size();
+    	assertEquals(count, countDao);
+    }
+    
 
 }
