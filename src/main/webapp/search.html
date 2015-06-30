@@ -1,7 +1,7 @@
 <div  ng-controller="SearchCtrl">
     <FORM method="get"  ng-submit="search()">
     	<h4>Recherchez votre GEEK :</h4>
-        <INPUT type="radio" name="sexe" id="man" value="H" ng-model="sexe" checked="checked"> Homme
+        <INPUT type="radio" name="sexe" id="man" value="H" ng-model="sexe"> Homme
         <INPUT type="radio" name="sexe" id="woman" value="F" ng-model="sexe"> Femme
 
         <br /><br />
@@ -16,7 +16,7 @@
     </FORM>
      <br />
     <div id="contenu" class="row">
-           <div ng-repeat="item in lesGeeks" class="col-xs-6 col-md-3">
+           <div ng-repeat="item in lesGeeks" class="col-xs-6 col-md-3" >
                <div id="unGeek" class="thumbnail">
                    <img src="/img/photos/{{item.photo}}" alt="geek">
                    <div class="caption">
