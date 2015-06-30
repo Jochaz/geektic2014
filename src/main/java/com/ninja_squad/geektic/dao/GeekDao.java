@@ -36,4 +36,11 @@ public class GeekDao {
         return resultReq.getResultList();
     }
 
+    //Retourne tout les geeks
+	public List<Geek> findAll() {
+		String reqAll = "SELECT g FROM Geek g";
+		TypedQuery<Geek> resultAll = entityManager.createQuery(reqAll, Geek.class);
+		return resultAll.getResultList();
+	}
+
 }

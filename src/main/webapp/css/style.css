@@ -4,11 +4,10 @@ body{
 }
 
 form{
-	width: 40%;
+	width: 30%;
 	padding: 2%;
 	margin: auto;
 	background-color: #ecf0f1;	
-	text-align: center;
 }
 
 #listeGeekUl{
@@ -35,4 +34,15 @@ form{
 #contenu{
 	width:100%;
 	margin: auto;
+	
+}
+
+#touslesgeeks{
+	width:70%;
+	margin:auto;
+	background-color: #ecf0f1;
+}
+
+#unGeek{
+	background-color: #ecf0f1;
 }

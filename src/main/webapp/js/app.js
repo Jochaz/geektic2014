@@ -16,6 +16,10 @@ app.config(['$routeProvider',
                 templateUrl: 'geeks.html',
                 controller: 'GeeksCtrl'
             }).
+            when('/all', {
+                templateUrl: 'all.html',
+                controller: 'AllGeeks'
+            }).
             otherwise({
                 redirectTo: '/'
             });
@@ -56,5 +60,12 @@ app.controller('IndexCtrl', function($scope, $http) {
 app.controller('GeeksCtrl', function($scope, $http, $routeParams) {
     $http.get('api/geeks/' + $routeParams.id).success(function(leGeek) {
         $scope.leGeek = leGeek;
+    });
+});
+
+//Retourne tous les geeks
+app.controller('AllGeeks', function($scope, $http) {
+    $http.get('api/geeks/').success(function(tousLesGeek) {
+        $scope.tousLesGeek = tousLesGeek;
     });
 });

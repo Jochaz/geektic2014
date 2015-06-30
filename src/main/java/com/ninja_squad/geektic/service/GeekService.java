@@ -40,4 +40,10 @@ public class GeekService {
         return dao.findById(id);
     }
     
+    @RequestMapping(method = GET)
+    public List<Geek> tousLesGeek(){
+		return dao.findAll();
+    	
+    }
+    
 }
