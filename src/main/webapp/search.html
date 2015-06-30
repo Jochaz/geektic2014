@@ -1,29 +1,29 @@
-<div>
-    <FORM method="get" ng-submit="search()" ng-controller="SearchCtrl" action="/#/search">
-        <INPUT type="radio" name="sexe" id="man" value="H" checked> Homme
-        <INPUT type="radio" name="sexe" id="woman" value="F" > Femme
+<div  ng-controller="SearchCtrl">
+    <FORM method="get"  ng-submit="search()">
+        <INPUT type="radio" name="sexe" id="man" value="H" checked="checked" ng-model="sexe"> Homme
+        <INPUT type="radio" name="sexe" id="woman" value="F" ng-model="sexe"> Femme
 
         <br /><br />
 
         <div class="interet">
-            <select name="listeInteret">
-            	<option ng-repeat="item in lesInterets" value={{item.id}}>{{item.libelle}}</option>
+            <select name="listeInteret" ng-model="interet">
+            	<option ng-value={{item.id}} ng-repeat="item in lesInterets">{{item.libelle}}</option>
             </select>
         </div>
         <br />
         <INPUT type="submit" value="Chercher votre Geek">
     </FORM>
-
-
-
-    <div >
-        <!--<div class="list-group">
-            <a ng-repeat="item in lesGeeks" href="#/geeks/{{item.id}}" class="list-group-item">
-                <h4 class="list-group-item-heading">{{item.nom}} {{item.prenom}}</h4>
-                <p class="list-group-item-text">{{item.mail}}</p>
-                <p class="list-group-item-text">{{item.sexe}}</p>
-            </a>
-        </div>-->
-        </table>
-    </div>
+     <br />
+    <div id="contenu" class="row">
+           <div ng-repeat="item in lesGeeks" class="col-xs-6 col-md-3">
+               <div class="thumbnail">
+                   <img src="/img/photos/{{item.photo}}" alt="geek">
+                   <div class="caption">
+                       <h3>{{item.nom}} {{item.prenom}}</h3>
+                       <p>{{item.description}}</p>
+                       <p><a href="#/geeks/{{item.id}}" class="btn btn-primary" role="button">Visite le profil de ton Geek</a></p>
+                   </div>
+               </div>
+           </div>
+       </div>
 </div>
